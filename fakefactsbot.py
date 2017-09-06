@@ -37,6 +37,11 @@ for top_level_comment in submission1.comments:
             #Post a new fake fact every hour
             time.sleep(3600)
             
+#Write to the Status File that thread 1 has completed           
+thread1 = open('C:/users/logan/desktop/projects/python/fakefactsbot/statusfile.txt', 'w')
+thread1.write("Thread 1 has completed\n")
+thread1.close()
+            
 submission2.comments.replace_more(limit=0)
 for top_level_comment in submission2.comments:
     #if the comment does not exceed twitter's 140 char limit
@@ -52,6 +57,11 @@ for top_level_comment in submission2.comments:
             #Post a new fake fact every hour
             time.sleep(3600)
 
+#Write to the Status File that thread 1 has completed           
+thread2 = open('C:/users/logan/desktop/projects/python/fakefactsbot/statusfile.txt', 'w')
+thread2.write("Thread 1 has completed\n")
+thread2.close()
+
 submission3.comments.replace_more(limit=0)
 for top_level_comment in submission3.comments:
     #if the comment does not exceed twitter's 140 char limit
@@ -66,3 +76,8 @@ for top_level_comment in submission3.comments:
             api.update_status(top_level_comment.body)
             #Post a new fake fact every hour
             time.sleep(3600)
+
+#Write to the Status File that thread 1 has completed           
+thread3 = open('C:/users/logan/desktop/projects/python/fakefactsbot/statusfile.txt', 'w')
+thread3.write("Thread 1 has completed\n")
+thread3.close()
