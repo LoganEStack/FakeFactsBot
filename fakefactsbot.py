@@ -33,9 +33,9 @@ for top_level_comment in submission1.comments:
             print(top_level_comment.body)
             
             #Update twitter status with a comment every x hours
-            #api.update_status(top_level_comment.body)
+            api.update_status(top_level_comment.body)
             #Post a new fake fact every hour
-            #time.sleep(3600)
+            time.sleep(3600)
             
 submission2.comments.replace_more(limit=0)
 for top_level_comment in submission2.comments:
@@ -48,9 +48,9 @@ for top_level_comment in submission2.comments:
             print(top_level_comment.body)
             
             #Update twitter status with a comment every x hours
-            #api.update_status(top_level_comment.body)
+            api.update_status(top_level_comment.body)
             #Post a new fake fact every hour
-            #time.sleep(3600)
+            time.sleep(3600)
 
 submission3.comments.replace_more(limit=0)
 for top_level_comment in submission3.comments:
